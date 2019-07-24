@@ -5,12 +5,12 @@ class FacebookProfile {
     //ITERATION 0: Variable properties and constant properties.
     
     //Step 0: Create your attributes section--What is a facebook profile made of?
-    var bio = "6 foot 2 giraffe from the Lou "
-    var userName = "Karlie Kloss"
-    var friendCount = 820000
-    let birthday = "Aug 3, 1992"
-    var relationshipStatus = "Married"
-    var friendList = ["Josh"]// and etc
+    var bio : String
+    var userName :String
+    var friendCount : Int
+    var birthday : String
+    var relationshipStatus : String
+    var friendList : [String]// and etc
     
     
     
@@ -34,7 +34,16 @@ class FacebookProfile {
     
     //Step 0: Generate an initializer based on the variable properties and constant properties.
     //Note: You may need to change the properties you created in Iteration 0!
-    /*****YOUR CODE GOES HERE*****/
+    init() {
+        bio = ""
+        userName = ""
+        friendCount = 0
+        birthday = ""
+        relationshipStatus = optionOne
+        friendList = ["Me", "Myself", "I"]
+        
+        
+    }
     
     //Step 1: Print your friendCount for your object to see if your initializer works.
     //Step 2: Print your relationshipStatus for your object to see if your initializer works.
@@ -94,6 +103,8 @@ class FacebookProfile {
 var karlie = FacebookProfile()
 print(karlie)
 //Iteration 1 Test
+print(karlie.friendCount)//print friendCount
+print(karlie.relationshipStatus)
 
 
 //Iteration 2 Test
